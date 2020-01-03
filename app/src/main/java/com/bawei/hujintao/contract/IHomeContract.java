@@ -1,6 +1,6 @@
 package com.bawei.hujintao.contract;
 
-import com.bawei.hujintao.model.bean.JavaBean;
+import com.bawei.hujintao.model.bean.BannerBean;
 import com.bawei.hujintao.model.bean.ListBean;
 
 /**
@@ -12,7 +12,7 @@ public interface IHomeContract {
     interface IView{
         void onSuccess(ListBean listBean);
         void onFailure(Throwable throwable);
-        void onBannerSuccess(JavaBean javaBean);
+        void onBannerSuccess(BannerBean bannerBean);
         void onBannerFailure(Throwable throwable);
     }
     interface IPresenter{
@@ -27,7 +27,7 @@ public interface IHomeContract {
             void onFailure(Throwable throwable);
         }
         interface IModelBannerCallback{
-            void onBannerSuccess(JavaBean javaBean);
+            void onBannerSuccess(BannerBean bannerBean);
             void onBannerFailure(Throwable throwable);
         }
     }

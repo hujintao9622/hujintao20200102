@@ -3,7 +3,7 @@ package com.bawei.hujintao.presenter;
 import com.bawei.hujintao.base.BasePresenter;
 import com.bawei.hujintao.contract.IHomeContract;
 import com.bawei.hujintao.model.HomeModel;
-import com.bawei.hujintao.model.bean.JavaBean;
+import com.bawei.hujintao.model.bean.BannerBean;
 import com.bawei.hujintao.model.bean.ListBean;
 
 /**
@@ -39,8 +39,8 @@ public class HomePresenter extends BasePresenter<IHomeContract.IView> implements
     public void getHomeBannerData() {
         homeModel.getHomeBannerData(new IHomeContract.IModel.IModelBannerCallback() {
             @Override
-            public void onBannerSuccess(JavaBean javaBean) {
-                view.onBannerSuccess(javaBean);
+            public void onBannerSuccess(BannerBean bannerBean) {
+                view.onBannerSuccess(bannerBean);
             }
 
             @Override

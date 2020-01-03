@@ -14,7 +14,7 @@
         />
 <com.stx.xhb.androidx.XBanner
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="150dp"
     android:id="@+id/ma_ban"
     >
 
@@ -22,13 +22,36 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
         android:text="热销新品"
         android:gravity="center"
         />
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/marc"
+        android:layout_height="150dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="魔力时尚"
+        android:gravity="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/marc2"
+        android:layout_height="150dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="品质生活"
+        android:gravity="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/marc3"
         android:layout_height="match_parent">
 
     </androidx.recyclerview.widget.RecyclerView>
